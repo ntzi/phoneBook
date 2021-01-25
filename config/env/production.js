@@ -19,7 +19,6 @@
  * https://sailsjs.com/docs/concepts/deployment
  */
 
-
 try {
   var local = require('../local')
 } catch {

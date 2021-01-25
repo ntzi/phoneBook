@@ -25,6 +25,9 @@ module.exports.routes = {
   'GET    /api/v1/contact/list':               { controller: "ContactController", action: "list" },
   'PUT    /api/v1/contact':                    { controller: "ContactController", action: "update" },
 
+  'POST   /api/v1/user/login/':                { controller: "UserController", action: "login" },
+  'POST   /api/v1/user/register/':             { controller: "UserController", action: "register" },
+
   /***************************************************************************
   *                                                                          *
   * More custom routes here...                                               *

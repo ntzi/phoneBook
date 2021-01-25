@@ -10,7 +10,11 @@ module.exports = {
   add: async ( req, res ) => {
     /* Add a new contact.
     Eg POST request: http://localhost:1337/api/v1/contact/add
-        
+    
+    Headers:
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZTMzNWU5YjNlOWE2MzMwNjc4OTM3ZSIsImlhdCI6MTYwOTc3OTI3NC
+      wiZXhwIjoxNjEyMzcxMjc0fQ.6HqCWpNNPOkc5huFGS15R2rMCVjR0MDcyb2RnRg4AVQ
+    
     Body (JSON):
       {
         "name": "Nikos",
@@ -54,6 +58,9 @@ module.exports = {
     /* Delete a contact in database.
     Eg DELETE request: http://localhost:1337/api/v1/contact?name=Nikos
     
+    Headers:
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZTMzNWU5YjNlOWE2MzMwNjc4OTM3ZSIsImlhd
+      CI6MTYwOTc3OTI3NCwiZXhwIjoxNjEyMzcxMjc0fQ.6HqCWpNNPOkc5huFGS15R2rMCVjR0MDcyb2RnRg4AVQ
     */
 
 
@@ -80,7 +87,11 @@ module.exports = {
   update: async ( req, res ) => {
     /* Update a record in the database.
     Eg PUT request: http://localhost:1337/api/v1/contact?name=Nikos
-        
+    
+    Headers:
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZTMzNWU5YjNlOWE2MzMwNjc4OTM3ZSIsImlhdCI6MTYwOTc3OTI3NC
+      wiZXhwIjoxNjEyMzcxMjc0fQ.6HqCWpNNPOkc5huFGS15R2rMCVjR0MDcyb2RnRg4AVQ
+    
     Body (JSON):
       {
         "name": "Nikos2",
@@ -122,6 +133,9 @@ module.exports = {
     /* Find a contact record in the database.
     Eg GET request: http://localhost:1337/api/v1/contact?name=Nikos
     
+    Headers:
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZTMzNWU5YjNlOWE2MzMwNjc4OTM3ZSIsImlhdCI6
+      MTYwOTc3OTI3NCwiZXhwIjoxNjEyMzcxMjc0fQ.6HqCWpNNPOkc5huFGS15R2rMCVjR0MDcyb2RnRg4AVQ
     */
 
     req = req.allParams();
@@ -149,7 +163,10 @@ module.exports = {
     Return contacts sorted by key (name, address, createdAt, etc) and in order (asc, desc).
     Eg GET request: http://localhost:1337/api/v1/contact/list?key=name&order=asc
     
-    */
+    Headers:
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZTMzNWU5YjNlOWE2MzMwNjc4OTM3ZSIsImlhdCI6
+      MTYwOTc3OTI3NCwiZXhwIjoxNjEyMzcxMjc0fQ.6HqCWpNNPOkc5huFGS15R2rMCVjR0MDcyb2RnRg4AVQ
+      */
     
     const query = req.query
     var key = query.key

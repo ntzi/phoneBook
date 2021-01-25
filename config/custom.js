@@ -22,5 +22,8 @@ module.exports.custom = {
   mongodbDatabase: {
     consumerKey: process.env.DB_URI
   },
+  jwt: {
+    privateKey: process.env.JWT_SECRET_KEY
+  }
 
 };
