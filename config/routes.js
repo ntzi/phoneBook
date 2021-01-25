@@ -21,6 +21,10 @@ module.exports.routes = {
 
   '/': { view: 'pages/homepage' },
 
+  'POST   /api/v1/contact/add':                { controller: "ContactController", action: "add" },
+  'DELETE /api/v1/contact':                    { controller: "ContactController", action: "delete" },
+  'GET    /api/v1/contact':                    { controller: "ContactController", action: "find" },
+  'PUT    /api/v1/contact':                    { controller: "ContactController", action: "update" },
 
   /***************************************************************************
   *                                                                          *
