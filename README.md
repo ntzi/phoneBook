@@ -1,6 +1,6 @@
 # Phone Book API
 
-An API that will serve as the backend for a phone book app, providing a list of people and their contact details.
+An API using Sails.js that will serve as the backend for a phone book app, providing a list of people and their contact details.
 
 ## Deploy
 ### Prerequisites
