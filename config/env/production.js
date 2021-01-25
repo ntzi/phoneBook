@@ -19,6 +19,15 @@
  * https://sailsjs.com/docs/concepts/deployment
  */
 
+
+try {
+  var local = require('../local')
+} catch {
+  console.log('local.js not found. Only required for local executions.')
+}
+
+const { custom } = require('../custom');
+
 module.exports = {
 
 
@@ -47,6 +56,9 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     default: {
+      adapter: 'sails-mongo',
+      url: custom.mongodbDatabase.consumerKey || local.custom.mongodbDatabase.consumerKey
+
       // adapter: 'sails-mysql',
       // url: 'mysql://user:password@host:port/database',
       //--------------------------------------------------------------------------

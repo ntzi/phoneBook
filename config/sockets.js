@@ -10,6 +10,7 @@
  */
 
 module.exports.sockets = {
+  adapter: 'memory',
 
   /***************************************************************************
   *                                                                          *
@@ -42,13 +43,13 @@ module.exports.sockets = {
   *                                                                          *
   ***************************************************************************/
 
-  // beforeConnect: function(handshake, proceed) {
-  //
-  //   // `true` allows the socket to connect.
-  //   // (`false` would reject the connection)
-  //   return proceed(undefined, true);
-  //
-  // },
+  beforeConnect: function(handshake, proceed) {
+  
+    // `true` allows the socket to connect.
+    // (`false` would reject the connection)
+    return proceed(undefined, true);
+  
+  },
 
 
   /***************************************************************************
