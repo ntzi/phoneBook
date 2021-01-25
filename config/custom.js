@@ -22,6 +22,9 @@ module.exports.custom = {
   mongodbDatabase: {
     consumerKey: process.env.DB_URI
   },
+  mongodbDatabaseMock: {
+    consumerKey: process.env.DB_URI_MOCK
+  },
   jwt: {
     privateKey: process.env.JWT_SECRET_KEY
   }
