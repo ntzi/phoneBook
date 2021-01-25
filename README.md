@@ -86,9 +86,8 @@ An API that will serve as the backend for a phone book app, providing a list of 
 
 
   -  **Delete** a contact. <br>
-    Eg DELETE request: http://localhost:1337/api/v1/contact?name=Nikos
-    
-    Headers: <br>
+    Eg DELETE request: http://localhost:1337/api/v1/contact?name=Nikos <br>
+    Headers:<br>
       token: `token`
 
   - **Update** a record. <br>
@@ -153,7 +152,7 @@ An API that will serve as the backend for a phone book app, providing a list of 
 ## TODO
   - Authentication
 
-    Basic JWT is used for authentication. Should be improved using to oAuth2 or something equevalent.
+    Basic JWT is used for authentication. Should be improved using OAuth2 or something equevalent.
 
   - Update Endpoint
     
